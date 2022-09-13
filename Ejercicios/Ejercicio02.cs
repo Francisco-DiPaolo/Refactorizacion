@@ -13,9 +13,8 @@ public class Ejercicio02 : MonoBehaviour
 
     private void SpecialAttack()
     { 
-        int specialForce = (force * 2) / 5;
-        int specialAgility = agility / 2;
+        bool boolCalculation = ((force * 2) / 5 > -1 && agility / 2 > 20)
 
-        if (specialForce > -1 && (specialAbility > 20)) Debug.Log("Special Attack");
+        if (boolCalculation) Debug.Log("Special Attack");
     }
 }
