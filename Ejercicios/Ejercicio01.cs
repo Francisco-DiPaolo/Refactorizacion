@@ -4,11 +4,14 @@ using UnityEngine;
 public class Ejercicio01 : MonoBehaviour
 {
     public float force;
+    public float speed;
+
     private Rigidbody2D rb2d;
 
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        force = 100f;
     }
 
     private void Update()
