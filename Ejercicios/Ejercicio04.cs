@@ -1,10 +1,11 @@
-using System;
+using System.Linq;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Ejercicio04 : MonoBehaviour
 {
 
-    public List<string>;
+    public List<string> enemigos;
     string enemigo;
 
     private void Start()
@@ -15,9 +16,6 @@ public class Ejercicio04 : MonoBehaviour
 
     string EncontrandoEnemigo()
     {
-        IEnumerable<string> nuevoenemigo = from variable in enemigos
-                                           where variable == enemigo
-                                           select variable;
 
         if (nuevoenemigo.Contains(enemigo)) return "Se encontro araña";
         else return "No se encontró";
